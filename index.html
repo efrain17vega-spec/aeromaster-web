@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus al aeropuerto de Huaraz - Anta - Aeromaster Airport</title>
+  <meta name="description" content="Airport shuttle del aeropuerto de Anta. La mejor opción de transporte a tu hotel u domicilio en Huaraz. Buses cómodos, rápidos y seguros." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== TOPBAR ===== -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-social">
+        <a href="https://wa.me/51990358529" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="topbar-lang">
+        <span class="lang-active"><img src="https://flagcdn.com/16x12/pe.png" alt="Español" /> Español</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- CAMBIO 1: logo desde carpeta imagenes local -->
+      <a href="#" class="logo">
+        <img src="Imagenes/logo.png" alt="Aeromaster Airport Shuttle"/>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="https://wa.me/51990358529" target="_blank"><i class="fab fa-whatsapp"></i> Reservar</a></li>
+          <!-- CAMBIO 3: solo Ancash / Huaraz–Anta -->
+          <li class="has-dropdown">
+            <a href="#">Rutas <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="#"><i class="fas fa-map-marker-alt"></i> Ancash — Huaraz – Anta (ATA)</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Planifica tu viaje</a></li>
+          <li><a href="#">Puntos de venta</a></li>
+          <li><a href="#">Ayuda</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="content">
+
+    <!-- GALERÍA DE VANS (4 imágenes) -->
+    <section class="van-gallery">
+      <div class="van-gallery-track">
+        <div class="van-slide">
+          <img src="Imagenes/van1.png" alt="Van Aeromaster 1" />
+          <div class="van-overlay">
+            <span>Flota Aeromaster</span>
+          </div>
+        </div>
+        <div class="van-slide">
+          <img src="Imagenes/van2.png" alt="Van Aeromaster 2" />
+          <div class="van-overlay">
+            <span>Cómodos y seguros</span>
+          </div>
+        </div>
+        <div class="van-slide">
+          <img src="Imagenes/van3.png" alt="Van Aeromaster 3" />
+          <div class="van-overlay">
+            <span>Huaraz ↔ Anta</span>
+          </div>
+        </div>
+        <div class="van-slide">
+          <img src="Imagenes/van4.png" alt="Van Aeromaster 4" />
+          <div class="van-overlay">
+            <span>Todos los días del año</span>
+          </div>
+        </div>
+      </div>
+      <!-- Controles del slider -->
+      <button class="gallery-btn gallery-prev" id="galleryPrev" aria-label="Anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="gallery-btn gallery-next" id="galleryNext" aria-label="Siguiente">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="gallery-dots" id="galleryDots">
+        <button class="dot active" data-index="0"></button>
+        <button class="dot" data-index="1"></button>
+        <button class="dot" data-index="2"></button>
+        <button class="dot" data-index="3"></button>
+      </div>
+    </section>
+
+    <!-- HERO / RESERVA WIDGET -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="reserva-box">
+          <!-- CAMBIO 2: texto + botón WhatsApp -->
+          <h3>Para mayor información y reservas contáctenos:</h3>
+          <div class="reserva-contacto">
+            <p class="reserva-desc">Nuestro equipo está disponible para ayudarte a planificar tu viaje entre Huaraz y el aeropuerto de Anta. Respondemos rápido por WhatsApp.</p>
+            <a href="https://wa.me/51990358529" target="_blank" class="btn-whatsapp-reservar">
+              <i class="fab fa-whatsapp"></i>
+              Reservar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <section class="content-section">
+      <div class="container">
+
+        <h1 class="page-title">Bus al aeropuerto de Huaraz - Anta</h1>
+
+        <div class="intro-block">
+          <div class="intro-img intro-img--mobile-first">
+            <img src="Imagenes/van1.png" alt="Van Aeromaster en ruta" />
+          </div>
+          <div class="intro-text">
+            <p>El Aeropuerto Comandante FAP Germán Arias Graziani (código IATA: ATA) se encuentra en el distrito de Anta, provincia de Carhuaz, departamento de Ancash.</p>
+            <p>Es importante tener en cuenta que Huaraz no tiene un aeropuerto dentro de la ciudad, por lo tanto es necesario tomar el servicio de airport shuttle de <strong>Aeromaster</strong> hacia el aeropuerto de Anta. La distancia del aeropuerto de Anta a Huaraz es de 24 kilómetros.</p>
+            <p>El aeropuerto de Anta también es la puerta de entrada a otras ciudades del Callejón de Huaylas como Carhuaz, Yungay y Caraz.</p>
+          </div>
+        </div>
+
+        <!-- PREGUNTA 1 -->
+        <div class="info-block reversed">
+          <div class="info-img">
+            <img src="Imagenes/van2.png" alt="Vuelo a Huaraz" />
+          </div>
+          <div class="info-text">
+            <h4>Si aún no tengo mi vuelo comprado, ¿cómo llego a Huaraz en avión?</h4>
+            <p>Si deseas viajar en avión a Huaraz deberás volar hacia Anta con Latam Airlines y luego tomar el bus de <strong>Aeromaster</strong> hacia Huaraz.</p>
+            <p>La única aerolínea que opera en el aeropuerto de Anta es Latam Airlines, con un vuelo diario desde la ciudad de Lima en horas de la mañana y un segundo vuelo los martes y jueves a mitad del día. Considera que las aerolíneas y buscadores comercializan este destino con el nombre de Huaraz, incluso cuando el aeropuerto está en otra provincia.</p>
+            <p>Recomendamos hacer las reservas (vuelo en Latam Airlines más airport shuttle de Aeromaster) una inmediatamente después de la otra.</p>
+          </div>
+        </div>
+
+        <!-- LLEGADA AL AEROPUERTO -->
+        <div class="info-block">
+          <div class="info-img info-img--mobile-first">
+            <img src="Imagenes/van3.png" alt="Van Aeromaster aeropuerto de Anta" />
+          </div>
+          <div class="info-text">
+            <h4>¿Cómo llegar del aeropuerto de Anta a Huaraz?</h4>
+            <p><strong>Aeromaster</strong> ofrece un servicio de bus directo, con dos frecuencias diarias, también conocido como airport shuttle entre el aeropuerto de Anta y Huaraz.</p>
+            <p>Luego de aterrizar, podrás encontrarnos pasando la puerta de llegadas, luego del recojo de equipaje. Partimos 15 minutos después del aterrizaje del vuelo LA2059 y del LA2559 de Latam Airlines. Nuestro personal tendrá un letrero color verde o celeste con la frase <strong>«Huaraz Airport Shuttle – Aeromaster»</strong>.</p>
+            <p>Nuestro bus te trasladará hasta la puerta de tu hotel, Airbnb u domicilio dentro de la ciudad de Huaraz. También puedes descender en la Plaza de Armas.</p>
+          </div>
+        </div>
+
+        <!-- INCLUYE -->
+        <div class="includes-block">
+          <h4>Nuestro servicio de airport shuttle incluye:</h4>
+          <ul class="includes-list">
+            <li><i class="fas fa-check-circle"></i> Horarios diseñados especialmente para conectar con los vuelos de Latam Airlines.</li>
+            <li><i class="fas fa-check-circle"></i> Recojo y desembarque en hotel, Airbnb u domicilio.</li>
+            <li><i class="fas fa-check-circle"></i> Espera en el aeropuerto en caso de retraso de vuelo.</li>
+            <li><i class="fas fa-check-circle"></i> Espacio en bodega para 1 maleta de 23Kg por pasajero.</li>
+            <li><i class="fas fa-check-circle"></i> Vans con aire acondicionado, calefacción, Wi-fi (de cortesía), asientos reclinables, luces de lectura y cargadores USB.</li>
+            <li><i class="fas fa-check-circle"></i> Asistencia a bordo en español e inglés por parte de un guía turístico.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Flexibilidad:</strong> Cambio de nombre, ruta y/o fecha; o colocación de boleto en standby; sin costo adicional con 24 horas de anticipación.</li>
+          </ul>
+        </div>
+
+        <!-- HUARAZ AL AEROPUERTO -->
+        <div class="info-block reversed">
+          <div class="info-img">
+            <img src="Imagenes/van4.png" alt="Van Aeromaster Huaraz al aeropuerto" />
+          </div>
+          <div class="info-text">
+            <h4>¿Cómo llegar de Huaraz al aeropuerto de Anta?</h4>
+            <p>El servicio de bus al aeropuerto de <strong>Aeromaster</strong> cuenta con dos frecuencias diarias todos los días del año, con horarios especialmente diseñados para conectar con el vuelo LA2060 y el LA2031 de Latam Airlines.</p>
+            <p>Al reservar tu boleto podrás seleccionar el recojo gratuito en cualquier hotel, Airbnb o domicilio dentro de la ciudad de Huaraz.</p>
+          </div>
+        </div>
+
+        <!-- TABLA DE HORARIOS -->
+        <div class="schedule-block">
+          <h4>Tabla de horarios</h4>
+          <div class="table-wrapper">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Lugar de partida</th>
+                  <th>Vuelo LA2030<br/><span>Todos los días</span></th>
+                  <th>Vuelo LA2059<br/><span>Excepto dom., miér. y sáb. / Diario desde julio</span></th>
+                  <th>Tarifa por pasajero<br><span>Soles (S/)</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hoteles, Airbnb y otras ubicaciones en el centro de Huaraz</td>
+                  <td>
+                    <strong>Hora de salida: 06:50</strong><br/>
+                    Llegada al aeropuerto: 07:30
+                  </td>
+                  <td>
+                    <strong>Hora de salida: 11:00</strong><br/>
+                    Llegada al aeropuerto: 11:40
+                  </td>
+                  <td>
+                    <strong>S/ 35.00</strong><br>
+                    <span>US$ 10.00</span><br>
+                    Por pasajero
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="schedule-note">
+            <p><i class="fas fa-info-circle"></i> Recuerda esperarnos en la puerta o en la recepción de tu alojamiento con 15 minutos de anticipación a la hora programada.</p>
+            <p>Si tu alojamiento se encuentra en Independencia, Vichay o Monterrey, el horario de partida variará entre 5 a 20 minutos ya que estas ubicaciones están más cerca del aeropuerto. Nos pondremos en contacto contigo para confirmar la hora de recojo.</p>
+          </div>
+        </div>
+
+        <!-- AVISO TAXIS -->
+        <div class="warning-block">
+          <div class="warning-icon"><i class="fas fa-exclamation-triangle"></i></div>
+          <div class="warning-text">
+            <h4>¡A tomar en cuenta!</h4>
+            <p>Los taxis cuestan el triple de lo que cuesta un boleto en el airport shuttle de Aeromaster y si viajas de la ciudad al aeropuerto estos se elevarán un 35% más debido al horario. Además, existen transportistas informales que podrían retrasar tu viaje, aparte de que pueden ser intervenidos y multados por la policía al ser un servicio ilegal.</p>
+            <p>No te arriesgues a perder tu vuelo y/o quedarte con tu equipaje a medio camino. Opta por un servicio autorizado y con horarios fijos, más la comodidad y seguridad que <strong>Aeromaster</strong> ofrece todos los días del año.</p>
+          </div>
+        </div>
+
+        <!-- CTA BOTONES -->
+        <div class="cta-buttons">
+          <a href="https://wa.me/51990358529?text=Hola,%20quiero%20reservar%20el%20shuttle%20del%20aeropuerto%20Anta%20a%20Huaraz" target="_blank" class="btn-cta btn-primary">
+            <i class="fas fa-plane-arrival"></i>
+            Airport shuttle del aeropuerto de Anta (ATA) a Huaraz
+          </a>
+          <a href="https://wa.me/51990358529?text=Hola,%20quiero%20reservar%20el%20shuttle%20de%20Huaraz%20al%20aeropuerto%20Anta" target="_blank" class="btn-cta btn-secondary">
+            <i class="fas fa-plane-departure"></i>
+            Airport shuttle bus de Huaraz al aeropuerto de Anta (ATA)
+          </a>
+        </div>
+
+        <!-- MAPA -->
+        <div class="map-block">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.8382037131237!2d-77.60335680493755!3d-9.347581841704134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a96bdfc59aecdd%3A0x6442aa6ccc6078d7!2sAeropuerto%20de%20Anta!5e0!3m2!1ses-419!2spe!4v1780765329195!5m2!1ses-419!2spe" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Aeropuerto de Anta">
+            </iframe>
+        <a href="https://maps.app.goo.gl/fFFgM1YSv2d1ffip9"
+        target="_blank"
+        class="btn-cta btn-primary">
+        <i class="fas fa-route"></i>
+        Ver ruta Aeropuerto → Plaza de Huaraz
+        </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== VIAJEROS SATISFECHOS ===== -->
+  <section class="viajeros-section">
+    <div class="container">
+      <div class="viajeros-header">
+        <h2 class="viajeros-title">Viajeros que confían en nosotros</h2>
+        <p class="viajeros-subtitle">Más de 100 pasajeros han llegado seguros a su destino con Aeromaster</p>
+        <div class="viajeros-stars" aria-label="Calificación 5 de 5 estrellas">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <span class="viajeros-rating">5.0</span>
+        </div>
+      </div>
+
+      <div class="viajeros-grid">
+        <div class="viajero-item"><img src="Imagenes/img1.png" alt="Viajero satisfecho 1" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img2.png" alt="Viajero satisfecho 2" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img3.png" alt="Viajero satisfecho 3" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img4.png" alt="Viajero satisfecho 4" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img5.png" alt="Viajero satisfecho 5" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img6.png" alt="Viajero satisfecho 6" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img7.png" alt="Viajero satisfecho 7" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img8.png" alt="Viajero satisfecho 8" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img9.png" alt="Viajero satisfecho 9" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img10.png" alt="Viajero satisfecho 10" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img11.png" alt="Viajero satisfecho 11" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img12.png" alt="Viajero satisfecho 12" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img13.png" alt="Viajero satisfecho 13" loading="lazy" /></div>
+        <div class="viajero-item"><img src="Imagenes/img14.png" alt="Viajero satisfecho 14" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <!-- CAMBIO 3: solo Ancash / Huaraz–Anta -->
+      <div class="footer-col">
+        <h5>Nuestras Rutas</h5>
+        <ul>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> Ancash</a></li>
+          <li><a href="#">Huaraz – Anta (ATA)</a></li>
+          <li><a href="#">Anta (ATA) – Huaraz</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Planifica tu viaje</h5>
+        <ul>
+          <li><a href="#">¿Cómo funciona Aeromaster?</a></li>
+          <li><a href="#">Tipos de servicios</a></li>
+          <li><a href="#">Franquicia de equipaje</a></li>
+          <li><a href="#">Wi-Fi gratuito</a></li>
+          <li><a href="#">Flexibilidad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Herramientas</h5>
+        <ul>
+          <li><a href="#">Libro de reclamaciones</a></li>
+          <li><a href="#">Puntos de venta</a></li>
+          <li><a href="#">Ayuda</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contáctanos</h5>
+        <p>Whatsapp: <a href="https://wa.me/51990358529">(+51) 990 358 529</a></p>
+        <p>Consultas generales, cambios y cancelaciones:<br/>
+          <a href="mailto:mcamonescarrasco@gmail.com">mcamonescarrasco@gmail.com</a>
+        </p>
+        <div class="footer-social">
+          <a href="https://wa.me/51990358529" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2026 Aeromaster Airport Shuttle</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
