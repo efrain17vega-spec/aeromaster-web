@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ===== ANIMACIÓN FADE-IN AL SCROLL =====
   const animatables = document.querySelectorAll(
-    '.intro-block, .info-block, .includes-block, .schedule-block, .warning-block, .cta-buttons, .map-block, .viajeros-header, .viajeros-grid'
+    '.intro-block, .info-block, .includes-block, .schedule-block, .warning-block, .pago-block, .cta-buttons, .map-block, .viajeros-header, .viajeros-grid'
   );
 
   animatables.forEach(function (el) {
