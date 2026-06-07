@@ -692,6 +692,199 @@ ul { list-style: none; }
 }
 .warning-text p:last-child { margin-bottom: 0; }
 
+/* ---------- PRECIOS Y MÉTODOS DE PAGO ---------- */
+.pago-block {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/* Tarifa */
+.pago-tarifa {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, #0a3d5c 0%, #0098d4 100%);
+  padding: 28px 32px;
+}
+
+.pago-tarifa-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: var(--color-white);
+}
+
+.pago-tarifa-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pago-tarifa-label {
+  font-family: var(--font-main);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.75);
+}
+
+.pago-tarifa-precios {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.pago-precio-sol {
+  font-family: var(--font-main);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.pago-precio-sep {
+  color: rgba(255,255,255,0.4);
+  font-size: 20px;
+}
+
+.pago-precio-usd {
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+}
+
+.pago-tarifa-note {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+}
+
+/* Horarios */
+.pago-horarios {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 20px 32px;
+  background: var(--color-light-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pago-horario-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  padding: 8px 0;
+}
+
+.pago-horario-item i {
+  font-size: 20px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.pago-horario-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pago-horario-item strong {
+  font-family: var(--font-main);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.pago-horario-item span {
+  font-size: 12.5px;
+  color: var(--color-muted);
+}
+
+.pago-horario-divider {
+  width: 1px;
+  height: 44px;
+  background: var(--color-border);
+  margin: 0 24px;
+  flex-shrink: 0;
+}
+
+/* Métodos de pago */
+.pago-metodos {
+  padding: 24px 32px 28px;
+}
+
+.pago-metodos-label {
+  font-family: var(--font-main);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pago-metodos-label i {
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+.pago-metodos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pago-metodo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.pago-metodo-logo {
+  width: 80px;
+  height: 28px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.pago-metodo-logo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.pago-metodo-logo svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.pago-metodo-item span {
+  font-family: var(--font-main);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-align: center;
+}
+
 /* CTA BUTTONS */
 .cta-buttons {
   display: flex;
@@ -1030,6 +1223,14 @@ ul { list-style: none; }
 
   .content-section { padding: 40px 0; }
   .hero-section { padding: 32px 0; }
+
+  /* Pago block en móvil */
+  .pago-tarifa { padding: 22px 20px; gap: 16px; }
+  .pago-precio-sol { font-size: 24px; }
+  .pago-horarios { flex-direction: column; padding: 16px 20px; gap: 12px; align-items: flex-start; }
+  .pago-horario-divider { width: 100%; height: 1px; margin: 0; }
+  .pago-metodos { padding: 20px 20px 24px; }
+  .pago-metodos-grid { gap: 10px; }
 
   /* Viajeros: 2 columnas en móvil */
   .viajeros-section { padding: 48px 0 56px; }
